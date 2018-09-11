@@ -1,9 +1,13 @@
 extends layout
 
 block content
-  h1= article.title
-  h5 Written by #{author}
+  h1= article.country
+  h5 Written by #{author} 
   p= article.body
+  ul.list-group
+    li.list-group-item GOLD: #{article.gold}
+    li.list-group-item SILVER: #{article.silver}
+    li.list-group-item BRONZE: #{article.bronze}
   hr
   if user
     if user.id ==article.author

@@ -2,16 +2,24 @@ let mongoose = require('mongoose');
 
 // Article Schema
 let articleSchema = mongoose.Schema({
-  title:{
+  country:{
     type: String,
     required: true
   },
   author:{
     type: String,
+    require: true
+  },
+  gold:{
+    type: Number,
     required: true
   },
-  body:{
-    type: String,
+  silver:{
+    type: Number,
+    required: true
+  },
+  bronze:{
+    type: Number,
     required: true
   }
 });

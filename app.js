@@ -90,7 +90,7 @@ app.get('/', function(req, res){
       console.log(err);
     } else {
       res.render('index', {
-        title:'Articles',
+        title:'ASIAN CUP',
         articles: articles
       });
     }
@@ -104,6 +104,6 @@ app.use('/articles', articles);
 app.use('/users', users);
 
 // Start Server
-app.listen(3000, function(){
+app.listen(8000, function(){
   console.log('Server started on port 3000...');
 });

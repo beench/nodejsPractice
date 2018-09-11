@@ -4,10 +4,19 @@ block content
   h1 #{title}
   form(method='POST', action='/articles/add')
     #form-group
-      label Title:
-      input.form-control(name='title', type='text')
+      label Country: &nbsp;
+      input.form-control-col(name='country', type='text')
+    br
     #form-group
-      label Body:
-      textarea.form-control(name='body')
+      label Gold: &nbsp;
+      input.form-control-col(name='gold', type='text')
+    br
+    #form-group
+      label Silver: &nbsp;
+      input.form-control-col(name='silver', type='text')
+    br
+    #form-group
+      label Bronze: &nbsp;
+      input.form-control-col(name='bronze', type='text')
     br
     input.btn.btn-primary(type='submit',value='Submit')
